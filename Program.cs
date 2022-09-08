@@ -1,9 +1,11 @@
-﻿//WorkWithIntegers();
-//OrderPrecedence();
-//testLimits();
+﻿WorkWithIntegers();
+OrderPrecedence();
+testLimits();
 WorkWithDoubles();
+workWithDecimals();
 
-
+double circle = (2.50*2.50)*Math.PI;
+Console.WriteLine(circle);
 
 void WorkWithIntegers()
 {
@@ -75,10 +77,27 @@ Console.WriteLine(h);
 
 double max = double.MaxValue;
 double min = double.MinValue;
-Console.WriteLine($"The range of doubles is {min} to {max}");
+Console.WriteLine($"The range of doubles are {min} to {max}");
 
 double third = 1.0 / 3.0;
 Console.WriteLine(third);
 
 Console.WriteLine(e+f/c*(a-g)+b);
+}
+
+
+void workWithDecimals(){
+decimal max = decimal.MaxValue;
+decimal min = decimal.MinValue;
+Console.WriteLine($"The range of decimels are {min} to {max}");
+
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a/b);
+
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d);
+
+
 }
